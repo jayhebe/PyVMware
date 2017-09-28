@@ -122,7 +122,3 @@ def get_vm(si, vmname = None):
             
         return obj_vms
     
-if __name__ == "__main__":
-    si = connect_viserver("labvcsa01.vlab.net", "adminjig@vlab.net", "Start1234")
-    for vm in get_vm(si):
-        print(vm.name, ":", vm.summary.config.guestFullName)
